@@ -31,11 +31,13 @@
 
 * 在 macOS 端執行 `sudo steam_forwarder.sh`
   * 請先編輯好檔案內的 `${SERVER}` 變數，設定 Steam server 的 IP address
+
   * 請先透過 homebrew 安裝 wireshark 和 socat
 
-  ```
-  brew install wirdshark socat
-  ```
+    ```
+    brew install wireshark socat
+    ```
+
 
   * 這個檔案的用途在參考資料連結有說明
 
