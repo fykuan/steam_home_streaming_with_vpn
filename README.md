@@ -39,4 +39,11 @@
 
 * 打開 macOS 端的 Steam，這時候應該就可以看到你的遊戲出現「串流」選項了
 
+  ![steam-1](images/steam-1.png)
 
+
+## 地雷
+
+* OpenVPN 要用 TAP 不能用 TUN
+* 不知道為什麼每次連線要重開串流 server 端的 Steam
+* 要在串流 client 端執行 steam_forwarder.sh 把 UDP broadcast 封包轉為由 TAP device 發出去
