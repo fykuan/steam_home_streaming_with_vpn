@@ -1,4 +1,6 @@
-#在 macOS 下透過 OpenVPN 及 Steam home streaming 遠端串流遊戲
+身為一個 Macbook Pro/Mac mini 使用者，有時候也會想玩遊戲。Steam 提供了 Steam Home Streaming 這個功能，讓你可以把區網內高階遊戲機的畫面，串流到其他低階的電腦上玩。但是如果不在同一個區網內，就沒有辦法了。
+
+這時候想到的就是 OpenVPN ，只要網路頻寬足夠，不管在哪裡都可以用筆電串流家裡的高階電腦來玩遊戲。
 
 這篇記錄作法，以免過一陣子忘記了
 
@@ -35,7 +37,7 @@
   brew install wirdshark socat
   ```
 
-  * 這個檔案的用途在檔案內的參考資料連結有說明
+  * 這個檔案的用途在參考資料連結有說明
 
 * 打開 macOS 端的 Steam，這時候應該就可以看到你的遊戲出現「串流」選項了
 
@@ -47,3 +49,7 @@
 * OpenVPN 要用 TAP 不能用 TUN
 * 不知道為什麼每次連線要重開串流 server 端的 Steam
 * 要在串流 client 端執行 steam_forwarder.sh 把 UDP broadcast 封包轉為由 TAP device 發出去
+
+## 參考資料
+
+* https://lg.io/2015/04/12/run-your-own-high-end-cloud-gaming-service-on-ec2.html
